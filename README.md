@@ -1,5 +1,7 @@
 # Frames
 
+![Faux browser wrappers inside the WordPress Editor showing the functionality of this Custom Block](https://raw.githubusercontent.com/TransistorPress/frames/trunk/screenshot.webp)
+
 # Licenses
 
 This Plugin is made for WordPress which is licensed under the [GPL v2.0 or later](https://github.com/WordPress/gutenberg/blob/trunk/LICENSE.md).
