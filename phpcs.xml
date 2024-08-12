@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Coding Standards for Newsroom Plugin">
+	<description>Coding standards for Newsroom.</description>
+
+	<config name="minimum_supported_wp_version" value="6.6" />
+
+	<rule ref="WordPress-Core" />
+
+	<rule ref="WordPress-Docs">
+		<exclude-pattern>*/tests/*</exclude-pattern>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" value="newsroom" />
+		</properties>
+	</rule>
+
+	<!-- We only support the latest major WordPress release. -->
+	<rule ref="WordPress.WP.DeprecatedFunctions" />
+
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php"/>
+	<file>.</file>
+
+	<!-- Test for PHP 7.2+ compatibility. -->
+	<config name="testVersion" value="7.2-"/>
+
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+</ruleset>

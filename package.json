@@ -1,0 +1,29 @@
+{
+	"name": "frames",
+	"version": "1.0.0",
+	"description": "Frame your content in UI chrome.",
+	"author": "TransistorPress",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/transistorpress/frames",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"postinstall": "node ./bin/copy-css-device-frames.js",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^28.5.0",
+		"colorette": "^2.0.20",
+		"css-device-frames": "^1.0.6",
+		"glob": "^11.0.0",
+		"webpack-merge": "^6.0.1"
+	},
+	"dependencies": {
+		"classnames": "^2.5.1"
+	}
+}

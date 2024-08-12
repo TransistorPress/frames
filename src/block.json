@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "transistorpress/frame",
+	"version": "0.1.0",
+	"title": "Frame",
+	"category": "design",
+	"description": "Frame your content in UI chrome.",
+	"attributes": {
+		"os": {
+			"type": "string",
+			"default": "",
+			"enum": [ "", "mac", "win" ]
+		},
+		"contentType": {
+			"type": "string",
+			"default": "title",
+			"enum": [ "title", "url" ]
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"wireframe": {
+			"type": "boolean",
+			"default": false
+		},
+		"dark": {
+			"type": "boolean",
+			"default": false
+		},
+		"borderless": {
+			"type": "boolean",
+			"default": false
+		},
+		"centered": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true,
+		"ariaLabel": true,
+		"shadow": true
+	},
+	"textdomain": "tp-frame",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,225 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.app-frame {
+  /* Defaults */
+  --cdf-bg: #fff;
+  --cdf-bar-bg: #f4f4f4 linear-gradient(to bottom, #fafafa, #f4f4f4);
+  --cdf-bar-height: 44px;
+  --cdf-border-color: #e3e3e3;
+  --cdf-border-radius: 8px;
+  --cdf-border-width: 1px;
+  --cdf-box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px -3px, rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
+  --cdf-button-color: initial;
+  --cdf-color: initial;
+  --cdf-grid-columns: auto;
+  --cdf-grid-rows: auto;
+  --cdf-padding-h: 20px;
+  --cdf-padding-v: 20px;
+  --cdf-title: initial;
+  --cdf-title-color: #222;
+  --cdf-title-size: 0.875em;
+  --cdf-title-weight: 600;
+  --cdf-url: initial;
+  --cdf-url-bg: #fff;
+  --cdf-url-border-radius: calc(var(--cdf-border-radius) * 0.6);
+  --cdf-url-border-width: 1px;
+  --cdf-url-color: #595959;
+}
+
+.app-frame {
+  --cdf-bar-inset: 20px;
+  --cdf-button-inset: 20px;
+  --cdf-title-inset: 20px;
+  --cdf-url-inset: 10px;
+  display: block;
+  position: relative;
+  overflow: auto;
+  margin: 1em 0;
+  box-shadow: var(--cdf-box-shadow);
+  padding: var(--cdf-padding-v, 0) var(--cdf-padding-h, 0) !important;
+  border: var(--cdf-border-width) solid var(--cdf-border-color);
+  border-radius: var(--cdf-border-radius);
+  background: var(--cdf-bg);
+  color: var(--cdf-color);
+  flex-wrap: wrap;
+  grid-template-rows: var(--cdf-bar-height) var(--cdf-grid-rows);
+  grid-template-columns: var(--cdf-grid-columns);
+}
+.app-frame.dark {
+  --cdf-bg: #262626;
+  --cdf-bar-bg: #404040 linear-gradient(to bottom, #525252, #404040);
+  --cdf-border-color: #525252;
+  --cdf-color: #f5f5f5;
+  --cdf-title-color: #d4d4d4;
+  --cdf-url-bg: #595959;
+  --cdf-url-border-width: 0;
+  --cdf-url-color: #d4d4d4;
+}
+.app-frame.wireframe {
+  --cdf-bg: none;
+  --cdf-bar-bg: none;
+  --cdf-border-width: 2px;
+  --cdf-url-border-width: 2px;
+  --cdf-url-bg: none;
+}
+.app-frame.mac {
+  --cdf-button-gap: calc(var(--cdf-button-size) * 0.57);
+  --cdf-button-size: 12px;
+  --cdf-title-inset: calc((var(--cdf-button-inset) * 2) + (var(--cdf-button-size) * 3) + (var(--cdf-button-gap) * 2));
+  --cdf-url-inset: var(--cdf-title-inset);
+}
+.app-frame.win {
+  --cdf-button-gap: var(--cdf-button-inset);
+  --cdf-button-inset: 25px;
+  --cdf-button-size: 10px;
+  --cdf-button-stroke-width: 1px;
+  --cdf-title-inset: calc((var(--cdf-button-inset) * 2) + (var(--cdf-button-size) * 3) + (var(--cdf-button-gap) * 2));
+  --cdf-url-inset: var(--cdf-title-inset);
+}
+.app-frame.win {
+  --cdf-button-color-default: #ccc;
+}
+.app-frame.dark.win {
+  --cdf-button-color-default: #a3a3a3;
+}
+.app-frame.wireframe {
+  --cdf-button-color-default: #d4d4d4;
+}
+.app-frame.wireframe.dark {
+  --cdf-button-color-default: var(--cdf-border-color);
+}
+.app-frame, .app-frame::before, .app-frame::after {
+  box-sizing: border-box;
+}
+.app-frame::before {
+  content: "";
+  display: block;
+  height: var(--cdf-bar-height);
+  margin-top: calc(0px - var(--cdf-padding-v, 0px));
+  margin-left: calc(0px - var(--cdf-padding-h, 0px));
+  margin-right: calc(0px - var(--cdf-padding-h, 0px));
+  margin-bottom: var(--cdf-padding-v);
+  border-bottom-width: var(--cdf-border-width);
+  border-bottom-style: inherit;
+  border-bottom-color: var(--cdf-border-color);
+  border-top-left-radius: calc(var(--cdf-border-radius) - var(--cdf-border-width));
+  border-top-right-radius: calc(var(--cdf-border-radius) - var(--cdf-border-width));
+  background: var(--cdf-bar-bg);
+  grid-column: 1/-1;
+  width: calc(100% + var(--cdf-padding-h, 0px) * 2);
+}
+.app-frame.mac::before {
+  background: radial-gradient(circle at calc(var(--cdf-button-inset) + var(--cdf-button-size) * 0.5) calc(var(--cdf-bar-height) / 2), var(--cdf-button-color, var(--cdf-button-color-default, #ff5f57)) calc(var(--cdf-button-size) / 2), transparent calc(var(--cdf-button-size) / 2)), radial-gradient(circle at calc(var(--cdf-button-inset) + var(--cdf-button-size) * 1.5 + var(--cdf-button-gap)) calc(var(--cdf-bar-height) / 2), var(--cdf-button-color, var(--cdf-button-color-default, #febc2e)) calc(var(--cdf-button-size) / 2), transparent calc(var(--cdf-button-size) / 2)), radial-gradient(circle at calc(var(--cdf-button-inset) + var(--cdf-button-size) * 2.5 + var(--cdf-button-gap) * 2) calc(var(--cdf-bar-height) / 2), var(--cdf-button-color, var(--cdf-button-color-default, #28c840)) calc(var(--cdf-button-size) / 2), transparent calc(var(--cdf-button-size) / 2)), var(--cdf-bar-bg);
+}
+.app-frame.win::before {
+  background: no-repeat calc(100% - (var(--cdf-button-inset) + var(--cdf-button-size) * 2 + var(--cdf-button-gap) * 2))/var(--cdf-button-size) var(--cdf-button-size) linear-gradient(0deg, transparent calc(var(--cdf-button-size) / 2 - var(--cdf-button-stroke-width) / 2), var(--cdf-button-color, var(--cdf-button-color-default)) calc(var(--cdf-button-size) / 2 - var(--cdf-button-stroke-width) / 2) calc(var(--cdf-button-size) / 2 + var(--cdf-button-stroke-width) / 2), transparent calc(var(--cdf-button-size) / 2 + var(--cdf-button-stroke-width) / 2)), no-repeat calc(100% - (var(--cdf-button-inset) + var(--cdf-button-size) + var(--cdf-button-gap)))/var(--cdf-button-size) var(--cdf-button-size) linear-gradient(0deg, var(--cdf-button-color, var(--cdf-button-color-default)) var(--cdf-button-stroke-width), transparent var(--cdf-button-stroke-width) calc(var(--cdf-button-size) - var(--cdf-button-stroke-width)), var(--cdf-button-color, var(--cdf-button-color-default)) calc(var(--cdf-button-size) - var(--cdf-button-stroke-width))), no-repeat calc(100% - (var(--cdf-button-inset) + var(--cdf-button-size) + var(--cdf-button-gap)))/var(--cdf-button-size) var(--cdf-button-size) linear-gradient(90deg, var(--cdf-button-color, var(--cdf-button-color-default)) var(--cdf-button-stroke-width), transparent var(--cdf-button-stroke-width) calc(var(--cdf-button-size) - var(--cdf-button-stroke-width)), var(--cdf-button-color, var(--cdf-button-color-default)) calc(var(--cdf-button-size) - var(--cdf-button-stroke-width))), no-repeat calc(100% - var(--cdf-button-inset))/var(--cdf-button-size) var(--cdf-button-size) linear-gradient(45deg, transparent calc(var(--cdf-button-size) * 0.7225 - var(--cdf-button-stroke-width)), var(--cdf-button-color, var(--cdf-button-color-default)) calc(var(--cdf-button-size) * 0.7225 - var(--cdf-button-stroke-width)) calc(var(--cdf-button-size) * 0.7225 + var(--cdf-button-stroke-width) * 0.7225), transparent calc(var(--cdf-button-size) * 0.7225 + var(--cdf-button-stroke-width) * 0.7225)), no-repeat calc(100% - var(--cdf-button-inset))/var(--cdf-button-size) var(--cdf-button-size) linear-gradient(135deg, transparent calc(var(--cdf-button-size) * 0.7225 - var(--cdf-button-stroke-width)), var(--cdf-button-color, var(--cdf-button-color-default)) calc(var(--cdf-button-size) * 0.7225 - var(--cdf-button-stroke-width)) calc(var(--cdf-button-size) * 0.7225 + var(--cdf-button-stroke-width) * 0.7225), transparent calc(var(--cdf-button-size) * 0.7225 + var(--cdf-button-stroke-width) * 0.7225)), var(--cdf-bar-bg);
+}
+.app-frame::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--cdf-bar-height) / 2);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translate(0, -50%);
+}
+.app-frame.mac[data-title]::after, .app-frame.mac[data-url]::after {
+  right: var(--cdf-bar-inset);
+}
+.app-frame.win[data-title]::after, .app-frame.win[data-url]::after {
+  left: var(--cdf-bar-inset);
+}
+.app-frame.centered[data-title]::after, .app-frame.centered[data-url]::after {
+  left: 50%;
+  right: 0;
+  min-width: 40%;
+  max-width: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.app-frame[data-title]::after {
+  content: attr(data-title);
+  left: var(--cdf-title-inset);
+  right: var(--cdf-title-inset);
+  color: var(--cdf-title-color);
+  font-size: var(--cdf-title-size);
+  font-weight: var(--cdf-title-weight);
+}
+.app-frame[data-title=""]::after {
+  content: var(--cdf-title);
+}
+.app-frame[data-url]::after {
+  content: attr(data-url);
+  left: var(--cdf-url-inset);
+  right: var(--cdf-url-inset);
+  padding: 0 1.25em;
+  box-shadow: inset 0 0 0 var(--cdf-url-border-width) var(--cdf-border-color);
+  border-radius: var(--cdf-url-border-radius);
+  background: var(--cdf-url-bg);
+  color: var(--cdf-url-color);
+  font-size: 0.8125em;
+  line-height: 2em;
+  line-height: clamp(1.8em, var(--cdf-bar-height) * 0.575, 2em);
+}
+.app-frame[data-url=""]::after {
+  content: var(--cdf-url);
+}
+.app-frame.borderless {
+  --cdf-padding-h: 0px;
+  --cdf-padding-v: 0px;
+  border: 0;
+}
+.app-frame.borderless::before {
+  margin: 0;
+  border: var(--cdf-border-width) solid var(--cdf-border-color);
+  border-top-left-radius: var(--cdf-border-radius);
+  border-top-right-radius: var(--cdf-border-radius);
+}
+.app-frame.borderless > *:only-child {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+.app-frame > iframe:only-child {
+  display: block;
+  max-height: none;
+  max-width: none;
+  width: 100%;
+  border: 0;
+  margin: 0;
+}
+.app-frame.scrolling {
+  display: grid;
+  align-items: stretch;
+  padding: 0 !important;
+}
+.app-frame.scrolling::before {
+  width: auto;
+  margin: 0;
+}
+.app-frame.scrolling > :only-child {
+  overflow: auto;
+  padding: var(--cdf-padding-v) var(--cdf-padding-h);
+}
+
+.app-frame.wireframe.dark {
+  --cdf-title-color: var(--cdf-border-color);
+  --cdf-url-color: var(--cdf-border-color);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,0 +1,25 @@
+.app-frame {
+    /* Defaults */
+    --cdf-bg       : #fff;
+    --cdf-bar-bg   : #f4f4f4 linear-gradient(to bottom, #fafafa, #f4f4f4);
+    --cdf-bar-height       : 44px;
+    --cdf-border-color     : #e3e3e3;
+    --cdf-border-radius    : 8px;
+    --cdf-border-width     : 1px;
+    --cdf-box-shadow       : rgba(0, 0, 0, 0.08) 0px 10px 15px -3px, rgba(0, 0, 0, 0.03) 0px 4px 6px -2px;
+    --cdf-button-color     : initial;
+    --cdf-color            : initial;
+    --cdf-grid-columns     : auto;
+    --cdf-grid-rows        : auto;
+    --cdf-padding-h        : 20px;
+    --cdf-padding-v        : 20px;
+    --cdf-title            : initial;
+    --cdf-title-color      : #222;
+    --cdf-title-size       : 0.875em;
+    --cdf-title-weight     : 600;
+    --cdf-url              : initial;
+    --cdf-url-bg   : #fff;
+    --cdf-url-border-radius: calc(var(--cdf-border-radius) * 0.6);
+    --cdf-url-border-width : 1px;
+    --cdf-url-color        : #595959;
+}

@@ -1,0 +1,10 @@
+@import './css-device-frames/application/index';
+
+.app-frame {
+    &.wireframe {
+        &.dark {
+            --cdf-title-color: var(--cdf-border-color);
+            --cdf-url-color: var(--cdf-border-color);
+        }
+    }
+}
